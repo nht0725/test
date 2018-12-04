@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    header {
+        width: 100%;
+        height: 200px;
+        background: tomato;
+        padding: 0 15px;
+        box-sizing: border-box;
+        border-top: 1px solid transparent;
+        div {
+            width: 100%;
+            height: 30px;
+            background: #fff;
+            margin-top: 15px;
+            display: flex;
+            span {
+                display: inline-block;
+                width: 40px;
+                height: 100%;
+                line-height: 30px;
+            }
+            input {
+                flex: 1;
+                border: 0;
+            }
+        }
+    }
+    section {
+        width: 100%;
+        flex: 1;
+        .swiper-container {
+            width: 100%;
+            height: 200px;
+            .swiper-wrapper {
+                width: 100%;
+                height: 100%;
+                .swiper-slide {
+                    width: 100%;
+                    height: 100%;
+                    &:nth-of-type(1) {
+                        background: yellow;
+                    }
+                    &:nth-of-type(2) {
+                        background: violet
+                    }
+                }
+            }
+        }
+    }
+}
